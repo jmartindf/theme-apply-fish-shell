@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2021 Fábio Antunes
+Copyright (c) Joe Martin, 2023—2024
+
+Copyright for portions of theme-apply-fish-shell are held by Fábio Antunes, 2021 as part of https://github.com/FabioAntunes/base16-fish-shell. All other copyright for theme-apply-fish-shell are held by Joe Martin, 2023—2024.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

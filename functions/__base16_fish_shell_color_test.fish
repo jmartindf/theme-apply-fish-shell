@@ -1,4 +1,4 @@
-function __base16_fish_shell_color_test -d "Util function that generates colour output"
+function __theme_apply_fish_shell_color_test -d "Util function that generates colour output"
     set ansi_mappings Black Red Green Yellow Blue Magenta Cyan White "Bright Black" "Bright Red" "Bright Green" "Bright Yellow" "Bright Blue" "Bright Magenta" "Bright Cyan" "Bright White"
     set colors base00 base08 base0B base0A base0D base0E base0C base05 base03 base08 base0B base0A base0D base0E base0C base07 base09 base0F base01 base02 base04 base06
     set non_padded_values (seq 0 21)

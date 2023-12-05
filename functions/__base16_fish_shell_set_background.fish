@@ -1,4 +1,4 @@
-function __base16_fish_shell_set_background -d "base16-fish-shell private function to check if theme is dark or light"
+function __theme_apply_fish_shell_set_background -d "theme-apply-fish-shell private function to check if theme is dark or light"
     set red $argv[1]
     set green $argv[2]
     set blue $argv[3]
@@ -8,8 +8,8 @@ function __base16_fish_shell_set_background -d "base16-fish-shell private functi
     # luma value range goes from 0 to 255
     # where 0 is darkest and 255 lightest
     if test $luma -lt 128
-        set -gx base16_fish_shell_background dark
+        set -gx theme_apply_fish_shell_background dark
     else
-        set -gx base16_fish_shell_background light
+        set -gx theme_apply_fish_shell_background light
     end
 end
