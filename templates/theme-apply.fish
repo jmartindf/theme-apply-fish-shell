@@ -1,8 +1,8 @@
-# base16-fish-shell (https://github.com/FabioAntunes/base16-fish-shell)
-# Inspired by base16-shell (https://github.com/chriskempson/base16-shell)
+# theme-apply-fish-shell (https://git.desertflood.com/jmartindf/theme-apply-fish-shell)
+# Inspired by base16-fish-shell (https://github.com/FabioAntunes/base16-fish-shell)
 # {{scheme-name}} scheme by {{scheme-author}}
 
-function base16-{{scheme-slug}} -d "base16 {{scheme-name}} theme"
+function theme-apply-{{scheme-slug}} -d "{{scheme-name}} theme"
     set options (fish_opt --short=t --long=test)
     argparse $options -- $argv
 
@@ -80,7 +80,7 @@ function base16-{{scheme-slug}} -d "base16 {{scheme-name}} theme"
         __put_template_custom 12 ";7" # cursor (reverse video)
     end
 
-    if test -z $base16_fish_shell_disable_prompt_colors
+    if test -z $theme_apply_fish_shell_disable_prompt_colors
         set -gx fish_color_normal normal
         set -gx fish_color_command "{{base0D-hex}}" blue
         set -gx fish_color_quote "{{base0B-hex}}" green
@@ -108,8 +108,8 @@ function base16-{{scheme-slug}} -d "base16 {{scheme-name}} theme"
         set -gx fish_pager_color_progress "{{base07-hex}}" brwhite --background=cyan
     end
 
-    __base16_fish_shell_set_background "{{base00-hex-r}}" "{{base00-hex-g}}" "{{base00-hex-b}}"
-    __base16_fish_shell_create_vimrc_background {{scheme-slug}}
+    __theme_apply_fish_shell_set_background "{{base00-hex-r}}" "{{base00-hex-g}}" "{{base00-hex-b}}"
+    __theme_apply_fish_shell_create_vimrc_background {{scheme-slug}}
     set -U base16_fish_theme {{scheme-slug}}
 
     if test -n "$_flag_t"
@@ -120,6 +120,6 @@ function base16-{{scheme-slug}} -d "base16 {{scheme-name}} theme"
             set base16_colors_hex $base16_colors_hex (string replace -a / "" $$color)
         end
 
-        __base16_fish_shell_color_test $base16_colors_hex
+        __theme_apply_fish_shell_color_test $base16_colors_hex
     end
 end
