@@ -1,9 +1,5 @@
 function __theme_apply_fish_shell_set_background -d "theme-apply-fish-shell private function to check if theme is dark or light"
-    set red $argv[1]
-    set green $argv[2]
-    set blue $argv[3]
-
-    set luma (math 0.2126 \* 0x$red + 0.7152 \* 0x$green + 0.0722 \* 0x$blue)
+    set luma $argv[1]
 
     # luma value range goes from 0 to 255
     # where 0 is darkest and 255 lightest
