@@ -1,4 +1,4 @@
-function __put_template_var -d "base16-fish-shell private function"
+function __put_template_var -d "theme-apply-fish-shell private function"
   if test -n "$TMUX"
     printf '\033Ptmux;\033\033]%d;rgb:%s\033\033\\\\\033\\' $argv
   else if string match -q -- 'screen*' $TERM
