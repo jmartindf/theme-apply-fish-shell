@@ -64,6 +64,11 @@ function theme-apply-solarized-light -d "Solarized Light theme"
         __put_template_iterm_color fg $color_foreground[1] # foreground
         __put_template_iterm_color bg $color_background[1] # background
 
+        __put_template_iterm_color bold $color_bold[1] # bold color
+        __put_template_iterm_color selbg $color_selection[1] # selection color
+        __put_template_iterm_color selfg $color_selected_text[1] # selected text color
+        __put_template_iterm_color curbg $color_cursor[1] # cursor
+        __put_template_iterm_color curfg $color_cursor_text[1] # cursor text
         __put_template_iterm_color black $color00[1]
         __put_template_iterm_color red $color01[1]
         __put_template_iterm_color green $color02[1]
